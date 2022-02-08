@@ -5,6 +5,7 @@ const Client = new Discord.Client({
         Discord.Intents.FLAGS.GUILD_MESSAGES
     ]
 });
+const config = require ("./config.js")
 
 const prefix = "!";
 
@@ -36,4 +37,4 @@ Client.on("messageCreate", message => {
 
 
 
-Client.login("OTQwNTM4Njg1NTMzODUxNjUw.YgI26A.bTQk5ktMdopsa42vx86DadIxyJk");
+Client.login(config.token);
