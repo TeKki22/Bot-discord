@@ -21,6 +21,7 @@ Client.on("messageCreate", message => {
     //!raid
     if (message.content === prefix + "raid"){
         const embed = new Discord.MessageEmbed()
+            .setColor("GOLD")
             .setTitle("__LISTE DES RAIDS__")
             .setDescription("Choisissez le raid que vous voulez")
             .addField("__Caveau de Verre__", "[ Strat et coffres cachés](https://www.youtube.com/watch?v=mfYnMykvjJM&t=496s)\n [Objets à récupérer](https://www.youtube.com/watch?v=PG9jkHmutao&list=PLTg8yNY-9NDP5FJUgzlG1ERnTneIfVrg-&index=17)\n [Table des loots](https://www.next-stage.fr/2021/05/destiny-2-la-table-de-loots-du-caveau-de-verre-dataminee.html)", false)
@@ -32,6 +33,7 @@ Client.on("messageCreate", message => {
     }
     else if (message.content === prefix + "donjon"){
         const embed = new Discord.MessageEmbed()
+            .setColor("WHITE")
             .setTitle("__LISTE DES DONJONS__")
             .setDescription("Choisissez le donjon que vous voulez")
             .addField("__Trône Brisé__", "[ Strat](https://www.youtube.com/watch?v=J8Lrsjw4osA&t=1042s)\n [Coffres cachés](https://www.youtube.com/watch?v=1df35rVWUCI)")
@@ -43,6 +45,7 @@ Client.on("messageCreate", message => {
     }
     else if (message.content === prefix + "help"){
         const embed = new Discord.MessageEmbed()
+            .setColor("RED")
             .setTitle("__LISTE DES COMMANDES__")
             .setDescription("Voici les commandes disponibles")
             .addField("__!raid__", "[Permet d'avoir toutes les infos sur le raid que vous voulez]()")
@@ -54,6 +57,7 @@ Client.on("messageCreate", message => {
     }
     else if (message.content === prefix + "liens"){
         const embed = new Discord.MessageEmbed()
+            .setColor("DARK_GREEN")
             .setTitle("__LIENS UTILES POUR DESTINY__")
             .addField("__Petite Lumière__", "[Application téléphone qui permet de gérer son inventaire et de voir les gods rolls des armes]()")
             .addField("__DIM__", "[Permet de gérer ses personnages, créer des builds et les optimiser, sauvegarder un équipement entier et l'équiper rapidement]()\n[__Lien ici__](https://app.destinyitemmanager.com)\n [Vidéo explicative](https://www.youtube.com/watch?v=qoVbJ1dZEow)")
@@ -63,6 +67,7 @@ Client.on("messageCreate", message => {
     }
     else if (message.content === prefix + "build"){
         const embed = new Discord.MessageEmbed()
+            .setColor("ORANGE")
             .setTitle("__BUILDS POUR CHAQUE CLASSE__")
             .addField("__Build Chasseur__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64862309-1-0-1-0-builds-pour-chasseur.htm)")
             .addField("__Build Arcaniste__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64888267-1-0-1-0-builds-pour-arcaniste.htm)")
