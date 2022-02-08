@@ -41,7 +41,34 @@ Client.on("messageCreate", message => {
 
         message.channel.send({ embeds: [embed]});
     }
-    
+    else if (message.content === prefix + "help"){
+        const embed = new Discord.MessageEmbed()
+            .setTitle("__LISTE DES COMMANDES__")
+            .setDescription("Voici les commandes disponibles")
+            .addField("__!raid__", "[Permet d'avoir toutes les infos sur le raid que vous voulez]()")
+            .addField("__!donjon__", "[Permet d'avoir toutes les infos sur le donjon que vous voulez]()")
+            .addField("__!liens__", "[Permet d'afficher tous les liens utiles pour Destiny]()")
+            .addField("__!build__", "[Permet de voir des builds différents pour chaque classe]()")
+
+        message.channel.send({ embeds: [embed]});
+    }
+    else if (message.content === prefix + "liens"){
+        const embed = new Discord.MessageEmbed()
+            .setTitle("__LIENS UTILES POUR DESTINY__")
+            .addField("__Petite Lumière__", "[Application téléphone qui permet de gérer son inventaire et de voir les gods rolls des armes]()")
+            .addField("__DIM__", "[Permet de gérer ses personnages, créer des builds et les optimiser, sauvegarder un équipement entier et l'équiper rapidement]()\n[__Lien ici__](https://app.destinyitemmanager.com)\n [Vidéo explicative](https://www.youtube.com/watch?v=qoVbJ1dZEow)")
+            .addField("__Destiny Recipes__", "[Site pour aider à se préparer aux nouvelles saisons]()\n [__Lien ici__](https://destinyrecipes.com)")
+
+        message.channel.send({ embeds: [embed]});
+    }
+    else if (message.content === prefix + "build"){
+        const embed = new Discord.MessageEmbed()
+            .setTitle("__BUILDS POUR CHAQUE CLASSE__")
+            .addField("__Build Chasseur__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64862309-1-0-1-0-builds-pour-chasseur.htm)")
+            .addField("__Build Arcaniste__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64888267-1-0-1-0-builds-pour-arcaniste.htm)")
+            .addField("__Build Titan__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64871088-1-0-1-0-builds-pour-titan.htm)")
+        message.channel.send({ embeds: [embed]});
+    }
 });
 
 
