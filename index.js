@@ -74,9 +74,9 @@ Client.on("messageCreate", message => {
             .setTitle("__BUILDS POUR CHAQUE CLASSE__")
             .setThumbnail("https://tse1.mm.bing.net/th?id=OIP.bEgXEt_fT74NiYAi5OZvHgHaHa&pid=Api&P=0&w=162&h=162.png")
             .setImage("https://tse2.mm.bing.net/th?id=OIP.j-AAlX8J7ApQEA_ckA38LwHaDv&pid=Api&P=0&w=347&h=175.png")
-            .addField("__Build Chasseur__", "[Lien ici](https://m.jeuxvideo.com/forums/42-33957-64862309-1-0-1-0-builds-pour-chasseur.htm)")
-            .addField("__Build Arcaniste__", "[Lien ici](https://m.jeuxvideo.com/forums/42-33957-64888267-1-0-1-0-builds-pour-arcaniste.htm)")
-            .addField("__Build Titan__", "[Lien ici](https://m.jeuxvideo.com/forums/42-33957-64871088-1-0-1-0-builds-pour-titan.htm)")
+            .addField("__Build Chasseur__", "[1ère partie](https://m.jeuxvideo.com/forums/42-33957-64862309-1-0-1-0-builds-pour-chasseur.htm)\n [Suite]()")
+            .addField("__Build Arcaniste__", "[1ère partie](https://m.jeuxvideo.com/forums/42-33957-64888267-1-0-1-0-builds-pour-arcaniste.htm)\n [Suite]()")
+            .addField("__Build Titan__", "[1ère partie](https://m.jeuxvideo.com/forums/42-33957-64871088-1-0-1-0-builds-pour-titan.htm)\n [Suite](https://docs.google.com/document/d/1EYZeZjF0yUOP2H6HLNQgsq-SFGpFhNtQbYtX1jIUEA4/edit?usp=sharing)")
         message.channel.send({ embeds: [embed]});
     }
 });
