@@ -7,7 +7,7 @@ const Client = new Discord.Client({
         Discord.Intents.FLAGS.GUILD_MESSAGES
     ]
 });
-const config = require ("./config.js")
+const config = require ("./config.js");
 
 const prefix = "!";
 
@@ -24,6 +24,7 @@ Client.on("messageCreate", message => {
             .setColor("GOLD")
             .setTitle("__LISTE DES RAIDS__")
             .setDescription("Choisissez le raid que vous voulez")
+            .setThumbnail("https://tse4.mm.bing.net/th?id=OIP.O4sHfbwtvjl-HeL-3B4p3QHaHa&pid=Api&P=0&w=142&h=142.png")
             .addField("__Caveau de Verre__", "[ Strat et coffres cachés](https://www.youtube.com/watch?v=mfYnMykvjJM&t=496s)\n [Objets à récupérer](https://www.youtube.com/watch?v=PG9jkHmutao&list=PLTg8yNY-9NDP5FJUgzlG1ERnTneIfVrg-&index=17)\n [Table des loots](https://www.next-stage.fr/2021/05/destiny-2-la-table-de-loots-du-caveau-de-verre-dataminee.html)", false)
             .addField("__Crypte de la Pierre__", "[ Strat](https://www.youtube.com/playlist?list=PLcm8uKhXeKKzcoXylwMjv_NYCZ_seXyCe)\n [Coffres cachés](https://www.youtube.com/watch?v=Wvip7EhHgf0)", false)
             .addField("__Dernier Voeu__", "[ Strat](https://youtube.com/playlist?list=PLcm8uKhXeKKzsSlgdNywPnxonzcGTIDOM)\n [Coffres cachés](https://www.youtube.com/watch?v=h4ceFuHEOzg)\n [Tous les voeux](https://www.next-stage.fr/2018/09/destiny-2-comment-activer-les-15-voeux-du-mur-des-souhaits.html)", false)
@@ -36,6 +37,8 @@ Client.on("messageCreate", message => {
             .setColor("WHITE")
             .setTitle("__LISTE DES DONJONS__")
             .setDescription("Choisissez le donjon que vous voulez")
+            .setThumbnail("https://tse1.mm.bing.net/th?id=OIP.bEgXEt_fT74NiYAi5OZvHgHaHa&pid=Api&P=0&w=162&h=162.png")
+            .setImage("https://tse3.explicit.bing.net/th?id=OIP.ZKpiICXhZ6_3J3RBUAU64gHaFj&pid=Api&P=0&w=220&h=165.png")
             .addField("__Trône Brisé__", "[ Strat](https://www.youtube.com/watch?v=J8Lrsjw4osA&t=1042s)\n [Coffres cachés](https://www.youtube.com/watch?v=1df35rVWUCI)")
             .addField("__Fosse de l'Hérésie__", "[ Strat et Coffres cachés](https://www.youtube.com/watch?v=XygFFFeMvhc&t=480s)")
             .addField("__Prophétie__", "[ Strat](https://youtube.com/playlist?list=PLcm8uKhXeKKy8xXns6hFQPcGm0_AbSY-y)\n [Coffres cachés](https://www.youtube.com/watch?v=0c5D_pn-yRs)\n [Objets à récupérer](https://www.youtube.com/watch?v=lzcvuw7vA6k)")
@@ -69,9 +72,11 @@ Client.on("messageCreate", message => {
         const embed = new Discord.MessageEmbed()
             .setColor("ORANGE")
             .setTitle("__BUILDS POUR CHAQUE CLASSE__")
-            .addField("__Build Chasseur__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64862309-1-0-1-0-builds-pour-chasseur.htm)")
-            .addField("__Build Arcaniste__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64888267-1-0-1-0-builds-pour-arcaniste.htm)")
-            .addField("__Build Titan__", "[__Lien ici__](https://m.jeuxvideo.com/forums/42-33957-64871088-1-0-1-0-builds-pour-titan.htm)")
+            .setThumbnail("https://tse1.mm.bing.net/th?id=OIP.bEgXEt_fT74NiYAi5OZvHgHaHa&pid=Api&P=0&w=162&h=162.png")
+            .setImage("https://tse2.mm.bing.net/th?id=OIP.j-AAlX8J7ApQEA_ckA38LwHaDv&pid=Api&P=0&w=347&h=175.png")
+            .addField("__Build Chasseur__", "[Lien ici](https://m.jeuxvideo.com/forums/42-33957-64862309-1-0-1-0-builds-pour-chasseur.htm)")
+            .addField("__Build Arcaniste__", "[Lien ici](https://m.jeuxvideo.com/forums/42-33957-64888267-1-0-1-0-builds-pour-arcaniste.htm)")
+            .addField("__Build Titan__", "[Lien ici](https://m.jeuxvideo.com/forums/42-33957-64871088-1-0-1-0-builds-pour-titan.htm)")
         message.channel.send({ embeds: [embed]});
     }
 });
