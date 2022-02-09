@@ -62,7 +62,7 @@ Client.on("messageCreate", message => {
         const embed = new Discord.MessageEmbed()
             .setColor("DARK_GREEN")
             .setTitle("__LIENS UTILES POUR DESTINY__")
-            .addField("__Petite Lumière__", "[Application téléphone qui permet de gérer son inventaire et de voir les gods rolls des armes]()")
+            .addField("__Petite Lumière__", "[Application téléphone qui permet de gérer son inventaire, voir les gods rolls des armes et voir tous les triomphes cachés]()")
             .addField("__DIM__", "[Permet de gérer ses personnages, créer des builds et les optimiser, sauvegarder un équipement entier et l'équiper rapidement]()\n[__Lien ici__](https://app.destinyitemmanager.com)\n [Vidéo explicative](https://www.youtube.com/watch?v=qoVbJ1dZEow)")
             .addField("__Destiny Recipes__", "[Site pour aider à se préparer aux nouvelles saisons]()\n [__Lien ici__](https://destinyrecipes.com)")
 
