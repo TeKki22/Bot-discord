@@ -66,7 +66,7 @@ Client.on("messageCreate", message => {
             .addField("__Petite Lumière__", "[Application téléphone qui permet de gérer son inventaire, voir les gods rolls des armes et voir tous les triomphes cachés]()")
             .addField("__DIM__", "[Permet de gérer ses personnages, créer des builds et les optimiser, sauvegarder un équipement entier et l'équiper rapidement]()\n [__Lien ici__](https://app.destinyitemmanager.com)\n [Vidéo explicative](https://www.youtube.com/watch?v=qoVbJ1dZEow)")
             .addField("__Destiny Recipes__", "[Site pour aider à se préparer aux nouvelles saisons]()\n [__Lien ici__](https://destinyrecipes.com)")
-            .addField("__Light.gg__", "[Base de données la plus complète de Destiny. Permet de chercher chaque élément du jeu (armes, mods, quêtes, ...) et de connaître la NN actuelle ainsi que ce que propose les vendeurs.](https://www.light.gg/)")
+            .addField("__Light.gg__", "[Base de données la plus complète de Destiny. Permet de chercher chaque élément du jeu (armes, mods, quêtes, ...) et de connaître la NN actuelle ainsi que ce que propose les vendeurs.]()\n [Lien ici](https://www.light.gg/)\n [Vidéo explicative](https://www.youtube.com/watch?v=03BBFuTCbgY)")
         message.channel.send({ embeds: [embed]});
     }
     else if (message.content === prefix + "build"){
