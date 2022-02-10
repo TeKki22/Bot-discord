@@ -51,11 +51,11 @@ Client.on("messageCreate", message => {
             .setColor("RED")
             .setTitle("__LISTE DES COMMANDES__")
             .setDescription("Voici les commandes disponibles")
-            .addField("__!raid__", "[Permet d'avoir toutes les infos sur le raid que vous voulez]()")
-            .addField("__!donjon__", "[Permet d'avoir toutes les infos sur le donjon que vous voulez]()")
-            .addField("__!liens__", "[Permet d'afficher tous les liens utiles pour Destiny]()")
-            .addField("__!build__", "[Permet de voir des builds différents pour chaque classe]()")
-            .addField("__!xur__", "[Permet de savoir où se trouve Xur cette semaine]()")
+            .addField("__!raid__", "Permet d'avoir toutes les infos sur le raid que vous voulez")
+            .addField("__!donjon__", "Permet d'avoir toutes les infos sur le donjon que vous voulez")
+            .addField("__!liens__", "Permet d'afficher tous les liens utiles pour Destiny")
+            .addField("__!build__", "Permet de voir des builds différents pour chaque classe")
+            .addField("__!xur__", "Permet de savoir où se trouve Xur cette semaine")
 
         message.channel.send({ embeds: [embed]});
     }
@@ -63,10 +63,10 @@ Client.on("messageCreate", message => {
         const embed = new Discord.MessageEmbed()
             .setColor("DARK_GREEN")
             .setTitle("__LIENS UTILES POUR DESTINY__")
-            .addField("__Petite Lumière__", "[Application téléphone qui permet de gérer son inventaire, voir les gods rolls des armes et voir tous les triomphes cachés]()")
-            .addField("__DIM__", "[Permet de gérer ses personnages, créer des builds et les optimiser, sauvegarder un équipement entier et l'équiper rapidement]()\n [__Lien ici__](https://app.destinyitemmanager.com)\n [Vidéo explicative](https://www.youtube.com/watch?v=qoVbJ1dZEow)")
-            .addField("__Destiny Recipes__", "[Site pour aider à se préparer aux nouvelles saisons]()\n [__Lien ici__](https://destinyrecipes.com)")
-            .addField("__Light.gg__", "[Base de données la plus complète de Destiny. Permet de chercher chaque élément du jeu (armes, mods, quêtes, ...) et de connaître la NN actuelle ainsi que ce que propose les vendeurs.]()\n [__Lien ici__](https://www.light.gg/)\n [Vidéo explicative](https://www.youtube.com/watch?v=03BBFuTCbgY)")
+            .addField("__Petite Lumière__", "Application téléphone qui permet de gérer son inventaire, voir les gods rolls des armes et voir tous les triomphes cachés")
+            .addField("__DIM__", "Permet de gérer ses personnages, créer des builds et les optimiser, sauvegarder un équipement entier et l'équiper rapidement\n [__Lien ici__](https://app.destinyitemmanager.com)\n [Vidéo explicative](https://www.youtube.com/watch?v=qoVbJ1dZEow)")
+            .addField("__Destiny Recipes__", "Site pour aider à se préparer aux nouvelles saisons\n [__Lien ici__](https://destinyrecipes.com)")
+            .addField("__Light.gg__", "Base de données la plus complète de Destiny. Permet de chercher chaque élément du jeu (armes, mods, quêtes, ...) et de connaître la NN actuelle ainsi que ce que propose les vendeurs\n [__Lien ici__](https://www.light.gg/)\n [Vidéo explicative](https://www.youtube.com/watch?v=03BBFuTCbgY)")
         message.channel.send({ embeds: [embed]});
     }
     else if (message.content === prefix + "build"){
@@ -85,10 +85,10 @@ Client.on("messageCreate", message => {
             .setColor("DARKER_GREY")
             .setTitle("__OU EST XUR__")
             .setImage("https://d2.destinygamewiki.com/mediawiki/images/thumb/5/5a/Xur_npc.png/400px-Xur_npc.png")
-            .addField("Savoir où se trouve Xur ce week-end", "[Lien ici](https://whereisxur.com/)")
+            .addField("Savoir où se trouve Xur ce week-end et ce qu'il vend", "[Lien ici](https://whereisxur.com/)")
         message.channel.send({ embeds: [embed]});
     }
-    
+
 });
 
 
