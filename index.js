@@ -92,12 +92,13 @@ Client.on("messageCreate", message => {
         
         message.channel.send({ embeds: [embed]});
     }
-    else if (message.content === prefix + "secteur"){
+    else if (message.content === prefix + "secteurs"){
         const embed = new Discord.MessageEmbed()
             .setColor("GREEN")
             .setTitle("__SECTEURS OUBLIES__")
             .setImage("https://www.bungie.net/pubassets/pkgs/143/143821/LostSectors.jpg?cv=3983621215&av=2665691163.png")
             .addField("Quels sont les secteurs maîtrise et légendes du jour?", "[Lien ici](https://www.novarcan.com/Destiny2/?part=d2lostsectors)")
+        
         message.channel.send({ embeds: [embed]});
     }
 
