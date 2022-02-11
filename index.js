@@ -39,10 +39,10 @@ Client.on("messageCreate", message => {
             .setDescription("Choisissez le donjon que vous voulez")
             .setThumbnail("https://tse1.mm.bing.net/th?id=OIP.bEgXEt_fT74NiYAi5OZvHgHaHa&pid=Api&P=0&w=162&h=162.png")
             .setImage("https://tse3.explicit.bing.net/th?id=OIP.ZKpiICXhZ6_3J3RBUAU64gHaFj&pid=Api&P=0&w=220&h=165.png")
-            .addField("__Trône Brisé__", "[ Strat](https://www.youtube.com/watch?v=J8Lrsjw4osA&t=1042s)\n [Coffres cachés](https://www.youtube.com/watch?v=1df35rVWUCI)\n [Aide pour solo]()")
-            .addField("__Fosse de l'Hérésie__", "[ Strat et Coffres cachés](https://www.youtube.com/watch?v=XygFFFeMvhc&t=480s)\n [Aide pour solo]()")
-            .addField("__Prophétie__", "[ Strat](https://youtube.com/playlist?list=PLcm8uKhXeKKy8xXns6hFQPcGm0_AbSY-y)\n [Coffres cachés](https://www.youtube.com/watch?v=0c5D_pn-yRs)\n [Objets à récupérer](https://www.youtube.com/watch?v=lzcvuw7vA6k)")
-            .addField("__Étreinte de l'Avarice__", "[ Strat](https://www.youtube.com/watch?v=Fr4UFHe98Kc)\n [Coffres cachés](https://www.youtube.com/watch?v=CJq3T5A8Jag)\n [Messages à récupérer (pour le passereau)](https://www.youtube.com/watch?v=s6nbiVZ-PFI)\n [Solo Titan]()-----[Solo Arca]()-----[Solo Chasseur]()")
+            .addField("__Trône Brisé__", "[ Strat](https://www.youtube.com/watch?v=J8Lrsjw4osA&t=1042s)\n [Coffres cachés](https://www.youtube.com/watch?v=1df35rVWUCI)\n [Solo Titan](https://www.youtube.com/watch?v=ubA0WlaORPc)-----[Solo Arca](https://www.youtube.com/watch?v=C5gSDdlxppU)-----[Solo Chasseur](https://www.youtube.com/watch?v=PFP8zVkptMc)")
+            .addField("__Fosse de l'Hérésie__", "[ Strat et Coffres cachés](https://www.youtube.com/watch?v=XygFFFeMvhc&t)\n [Solo Titan](https://youtu.be/YGUTffSQLG4)-----[Solo Arca](https://www.youtube.com/watch?v=NDdUPWII-1Y)-----[Solo Chasseur](https://www.youtube.com/watch?v=ri5cwQbPyII)")
+            .addField("__Prophétie__", "[ Strat](https://youtube.com/playlist?list=PLcm8uKhXeKKy8xXns6hFQPcGm0_AbSY-y)\n [Coffres cachés](https://www.youtube.com/watch?v=0c5D_pn-yRs)\n [Objets à récupérer](https://www.youtube.com/watch?v=lzcvuw7vA6k)\n [Solo Titan](https://www.youtube.com/watch?v=zXzvK9hRiH8)-----[Solo Arca](https://www.youtube.com/watch?v=YGUatdaRNs4)-----[Solo Chasseur](https://www.youtube.com/watch?v=K-2FWbvBekU)")
+            .addField("__Étreinte de l'Avarice__", "[ Strat](https://www.youtube.com/watch?v=Fr4UFHe98Kc)\n [Coffres cachés](https://www.youtube.com/watch?v=CJq3T5A8Jag)\n [Messages à récupérer (pour le passereau)](https://www.youtube.com/watch?v=s6nbiVZ-PFI)\n [Solo Titan](https://www.youtube.com/watch?v=-yi7jXhZ1d4&t)-----[Solo Arca](https://www.youtube.com/watch?v=NXVJd3XIAt8)-----[Solo Chasseur](https://www.youtube.com/watch?v=6L8DZ7XSrb4)")
 
         message.channel.send({ embeds: [embed]});
     }
